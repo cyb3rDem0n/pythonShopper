@@ -13,7 +13,6 @@ from tkinter import *
 
 
 def get_history():
-
     # mysql connection, easy man!
     global window
     con = db.connector.connect(host='localhost', database='market_basket', user='root', password='toor')
@@ -28,7 +27,7 @@ def get_history():
         window = Tk()
         window.title("Basket Shop")
         window.resizable(width=False, height=False)
-        #window.geometry('{}x{}'.format(250, 130))
+        # window.geometry('{}x{}'.format(250, 130))
 
         # Column of a Basket Shop record
         Label(window, text="ID: ").grid(row=0, column=0)
@@ -57,8 +56,13 @@ def get_last():
     print "getLast not ready... Sorry Man"
 
 
-def insert_new():
-    print "insertNew not ready... Sorry Man"
+def insertonclick():
+    print "i should insert into DB but..."
+
+
+# or i make a new file for each CRUD method with his
+# own button, or i show on the main IF, a insert form,
+# and a button to insert on db...
 
 
 def money_spent():
